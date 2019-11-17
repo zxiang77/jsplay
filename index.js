@@ -13,13 +13,13 @@ const server = http.createServer((req, res) => {
     res.end("Hello nodejs");
 })
 
-app.get('/', (req, res) => {
-    res.send("http hi!")
-})
+// app.get('/', (req, res) => {
+//     res.send("http hi!")
+// })
 
-const server2 = app.listen(3000, () => {
-    console.log("server2 ready")
-})
+// const server2 = app.listen(3000, () => {
+//     console.log("server2 ready")
+// })
 
 server.listen(port, hostname, () => {
     console.log(`server started ${hostname}:${port}`)
@@ -27,5 +27,5 @@ server.listen(port, hostname, () => {
 
 process.on('SIGTERM', () => {
     server.close()
-    server2.close()
+    // server2.close()
 })
