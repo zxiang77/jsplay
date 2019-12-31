@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader("Content-Type", 'text/plain');
     res.end("Hello nodejs");
-})
+});
 
 // app.get('/', (req, res) => {
 //     res.send("http hi!")
@@ -23,9 +23,9 @@ const server = http.createServer((req, res) => {
 
 server.listen(port, hostname, () => {
     console.log(`server started ${hostname}:${port}`)
-})
+});
 
 process.on('SIGTERM', () => {
     server.close()
     // server2.close()
-})
+});
