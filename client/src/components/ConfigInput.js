@@ -47,3 +47,4 @@ export default class ConfigInput extends React.Component {
     }
 }
 // notes: the tags in Reacts are called JSX
+// try out the Redux
