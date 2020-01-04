@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Constants from '../constants/steps'  
+import * as Constants from '../constants/steps'
 import ConfigInput from './ConfigInput';
 
 
@@ -27,21 +27,14 @@ export default class MainConfig extends React.Component {
 
     handleConfigUpdateReplace(field) {
         return (e) => {
-            console.log('evt', e);
             const value = e.target.value; // why event can only be unpacked here?
-            console.log('val', value);
 
             this.setState((state, props) => {
-                console.log(props);
                 return {
                     [field]: value
                 };
             });
         }
-    }
-
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        console.log('state', this.state)
     }
 
     handleStateChange() {

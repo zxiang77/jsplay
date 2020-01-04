@@ -39,7 +39,7 @@ export default class ConfigInput extends React.Component {
         }
 
         return (<div className='child'>
-            <label name={this.props.name} style={{width: '30%'}} for={this.props.name}>
+            <label name={this.props.name} style={{width: '30%'}} htmlFor={this.props.name}>
                 {this.props.name}
             </label>
             { field }
