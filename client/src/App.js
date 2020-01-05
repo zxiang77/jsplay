@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './k8s.png';
 import './App.css';
 import { BrowserRouter /* how this behave */, Route } from 'react-router-dom';
-import MainConfig from './components/MainConfig';
+import MainConfig from './containers/MainConfig';
 import AddMoreButton from './components/AddMoreButton'
 
 class App extends React.Component {

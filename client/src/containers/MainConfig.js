@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Constants from '../constants/configState'
-import ConfigInput from './ConfigInput';
+import ConfigInput from '../components/ConfigInput';
 
 
 export default class MainConfig extends React.Component {
@@ -37,12 +37,7 @@ export default class MainConfig extends React.Component {
         }
     }
 
-    handleStateChange() {
-
-    }
-
     render() {
-        // todo:z create a form here
         return (
         <form className='flex'>
             <ConfigInput name='apiVersion' type='dropdown' data={['Please Select', 1.1, 1.2]} onComplete={this.handleConfigUpdateReplace}/>
@@ -50,6 +45,11 @@ export default class MainConfig extends React.Component {
         </form>)
     }
 }
+
+const mapStateToProps = (state) => (
+
+)
+
 // roadmap: create a sample, input field, and use polymorphism to determine type of the input
 // each completed field should update state,
 // different state will render different behaviors
