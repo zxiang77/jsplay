@@ -1,4 +1,4 @@
-import * as Constants from '../constants/steps'
+import * as Constants from '../constants/configState'
 // actions: move to ($nextStep)
 //
 // states: START, ADDING_NODE, COMPLETE_NODE, COMPLETE_CONFIG (EXPORT)

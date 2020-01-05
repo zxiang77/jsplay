@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Constants from '../constants/steps'
+import * as Constants from '../constants/configState'
 import ConfigInput from './ConfigInput';
 
 
